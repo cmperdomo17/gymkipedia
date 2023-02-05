@@ -1,0 +1,21 @@
+header{
+    min-height: 70px;
+    display: flex;
+    background-color:white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+.GymKipedia{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:midnightblue;
+}
+.Search{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background-color: black;
+}
