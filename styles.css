@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Verdana;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 main{
@@ -18,8 +18,56 @@ main{
     background-attachment:fixed;
 }
 
+:root{
+    scroll-behavior: smooth;
+}
+
+.hamburguer{
+    position: fixed;
+    z-index: 10;
+    height: 40px;
+    top: 15px;
+    right: 30px;
+    background: #fff;
+    width: 40px;
+    cursor: pointer;
+    padding: 3px;
+    border-radius: 15px;
+    box-shadow: 0 0 6px rgba(0,0,0,.5);
+}
+
+.menu-navegacion{
+    position: fixed;
+    top:0;
+    right:0;
+    width: 30vw;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: transform .3s ease-in-out;
+    transform: translate(110%);
+    box-shadow: 0 0 6px rgba(0,0,0,.5);
+}
+
+.spread{
+    transform: translate(0);
+}
+
+.menu-navegacion a{
+    color:black;
+    text-decoration: none;
+}
+
+
+
+header:hover .menu-navegacion{
+    transform: translate(110%);
+}
 .GymKipedia{
-    font-family:Verdana;
+    font-family:'Ubuntu';
     color:rgb(72, 72, 72);
     font-size: 35px;
 }
@@ -49,19 +97,6 @@ p{
     font-size: 20px;
 }
 
-.Ejercicios{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    width: 100%;
-    color:white;
-    background-color:black;
-    padding: 10px;
-    font-family: 'Trebuchet MS';
-}
-
-
 section{
     width: 100%;
     height: 20vh;
@@ -69,6 +104,7 @@ section{
     justify-content: center;
     align-items: center;
     font-size: 30px;
+    font-family: 'Ubuntu';
 }
 
 .imgs{
@@ -99,7 +135,7 @@ section{
     position: absolute;
     text-shadow:3px 3px 3px black;
     font-size: 50px;
-    font-family:'Trebuchet MS';
+    font-family:'Ubuntu';
 }
     
 .imgs img:hover + .img-text{
@@ -120,11 +156,12 @@ section{
     border: none;
     background-color: #ebebeb;
     color: rgb(0, 0, 0);
-    font-size: 16px;
+    font-size: 20px;
     width: 20%;
     box-sizing: border-box;
     outline: none;
     text-align: center;
+    font-family: 'Ubuntu';
 }
 .Buscar form input[type="text"]:focus{
     background-color: #FFFFFF;
@@ -134,12 +171,17 @@ section{
     color: transparent;
 }
 .Buscar button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height:40px;
     width: 100px;
     background-color:black;
     color:rgb(255, 255, 255);
     border:none;
     border-radius: 16px;
+    font-size: 17px;
+    font-family: 'Ubuntu';
 }
 
 .Buscar button{
@@ -151,7 +193,7 @@ section{
     padding: 10px;
 }
 
-.Rutinas{
+.Subtitulos{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -160,7 +202,7 @@ section{
     color:white;
     background-color:black;
     padding: 10px;
-    font-family:'Courier New', Courier, monospace;
+    font-family:'Ubuntu';
 }
 
 .imgs2{
@@ -191,7 +233,7 @@ section{
     position: absolute;
     text-shadow:3px 3px 3px black;
     font-size: 60px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:'Ubuntu';
 }
     
 .imgs2 img:hover + .img-text{
